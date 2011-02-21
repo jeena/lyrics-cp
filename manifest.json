@@ -1,0 +1,19 @@
+{
+  "name": "Lyrics copy & paste",
+  "version": "1.0",
+  "description": "Make lyrics copy & pastable.",
+  "icons": {
+	"128": "icon128.png"
+  },
+  "homepage_url": "http://jeena.net",
+  "permissions": [
+    "http://www.lyricsfreak.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://www.lyricsfreak.com/*"],
+      "js": ["contentscript.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
